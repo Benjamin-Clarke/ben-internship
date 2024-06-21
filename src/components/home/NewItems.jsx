@@ -64,7 +64,6 @@ const NewItems = () => {
     );
     setData(data);
     setLoading(false);
-    //console.log(data)
   }
 
   useEffect(() => {
