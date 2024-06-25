@@ -16764,22 +16764,14 @@ img {
   margin: 4px auto;
 }
 
-@media (min-width: 992px) {
-  .hot-coll__skeleton-item {
-    width: 25%;
-  }
-}
 
-@media (min-width: 576px) {
-  .hot-coll__skeleton-item {
-    width: 50%;
-  }
-}
 
 /* New Item Section */
 
 .new-item__card {
   padding: 0 8px;
+  display: block;
+  background-size: cover;
 }
 
 /* new img skeleton */
@@ -16851,4 +16843,36 @@ img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+}
+
+/* explore page */
+
+.card_skel_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_skel {
+  width: 100%;
+  padding: 0 8px;
+}
+
+@media (min-width: 992px) {
+  .hot-coll__skeleton-item {
+    width: 25%;
+  }
+
+  .card_skel {
+    width: 25% !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .hot-coll__skeleton-item {
+    width: 50%;
+  }
+
+  .card_skel {
+    width: 50%;
+  }
 }
