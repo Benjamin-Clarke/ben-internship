@@ -10,7 +10,8 @@ export default function ItemCard({
   title,
   price,
   likes,
-  onExplorePage
+  onExplorePage,
+  authorId,
 }) {
   return (
     <div
@@ -23,15 +24,27 @@ export default function ItemCard({
     >
       <div className="nft__item">
         <div className="author_list_pp">
-          <Link
-            to="/author"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Creator: Monica Lucas"
-          >
-            <img className="lazy" src={authorImage} alt="" />
-            <i className="fa fa-check"></i>
-          </Link>
+          {authorId ? (
+            <Link
+              to={`/author/${authorId}`}
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Creator: Monica Lucas"
+            >
+              <img className="lazy" src={authorImage} alt="" />
+              <i className="fa fa-check"></i>
+            </Link>
+          ) : (
+            <Link
+              to=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Creator: Monica Lucas"
+            >
+              <img className="lazy" src={authorImage} alt="" />
+              <i className="fa fa-check"></i>
+            </Link>
+          )}
         </div>
 
         {expiryDate ? (

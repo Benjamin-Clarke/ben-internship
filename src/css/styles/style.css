@@ -16876,3 +16876,38 @@ img {
     width: 50%;
   }
 }
+
+/* author */
+
+.author-skel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-skel-wrap {
+  display: flex;
+}
+
+.author-skel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 8px;
+}
+
+@media (max-width: 768px) {
+  .author-skel-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .author-skel-wrap {
+    flex-direction: column;
+  }
+
+  .author-skel-info {
+    margin: 10px 0;
+  }
+}

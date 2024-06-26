@@ -63,6 +63,7 @@ const ExploreItems = () => {
               price={item.price}
               likes={item.likes}
               onExplorePage={true}
+              authorId={item.authorId}
             />
           ))
       )}

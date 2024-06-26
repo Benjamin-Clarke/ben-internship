@@ -105,6 +105,7 @@ const NewItems = () => {
             <Slider {...settings} className="slider-wrapper">
               {data.map((item) => (
                 <ItemCard
+                  key={item.id}
                   id={item.id}
                   authorImage={item.authorImage}
                   expiryDate={item.expiryDate}
@@ -113,6 +114,7 @@ const NewItems = () => {
                   price={item.price}
                   likes={item.likes}
                   onExplorePage={false}
+                  authorId={item.authorId}
                 />
               ))}
             </Slider>
