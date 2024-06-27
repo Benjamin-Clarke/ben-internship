@@ -115,6 +115,7 @@ const NewItems = () => {
                   likes={item.likes}
                   onExplorePage={false}
                   authorId={item.authorId}
+                  nftId={item.nftId}
                 />
               ))}
             </Slider>

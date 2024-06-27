@@ -16896,6 +16896,27 @@ img {
   margin: 30px 8px;
 }
 
+/*item details */
+
+.item-details-skel-wrapper {
+  display: flex;
+}
+
+.item-details-skel-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.skel-author-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
 @media (max-width: 768px) {
   .author-skel-wrapper {
     flex-direction: column;
@@ -16910,4 +16931,10 @@ img {
   .author-skel-info {
     margin: 10px 0;
   }
+
+
+.item-details-skel-wrapper {
+  flex-direction: column;
+}
+
 }

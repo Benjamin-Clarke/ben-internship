@@ -64,6 +64,7 @@ const ExploreItems = () => {
               likes={item.likes}
               onExplorePage={true}
               authorId={item.authorId}
+              nftId={item.nftId}
             />
           ))
       )}

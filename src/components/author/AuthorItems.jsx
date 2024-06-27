@@ -19,6 +19,7 @@ const AuthorItems = ({ data, authorImage }) => {
                 price={item.price}
                 likes={item.likes}
                 onExplorePage={true}
+                nftId={item.nftId}
               />
             ))
           ) : (
